@@ -10,7 +10,6 @@ function App() {
 
   useEffect(() => {
     axios.get('/api/events').then((res) => setLatestVisitor(res.data));
-
     axios.get('/api/stats').then((res) => setMostVisitUser(res.data));
   }, []);
 
